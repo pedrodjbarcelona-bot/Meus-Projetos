@@ -27,5 +27,11 @@ Basta abrir o arquivo `.html` diretamente no navegador:
 # Entre na pasta
 cd barcelona-buffet
 
+
+
+## 📸 Preview
+![Preview do site](preview_readme.png)
+
+
 # Abra no navegador (ex.: Chrome, Firefox, Edge)
 # Clique 2x no arquivo .html
