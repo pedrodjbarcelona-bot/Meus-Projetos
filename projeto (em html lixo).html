@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Barcelona Buffet • São Vicente, SP</title>
+  <meta name="description" content="Barcelona Buffet, São Vicente (SP): eventos completos — casamentos, aniversários, 15 anos e corporativos. Espaço, gastronomia e decoração em um só lugar, com tecnologia de ponta." />
+  <meta name="theme-color" content="#0B0B0F" />
+  <meta property="og:title" content="Barcelona Buffet • São Vicente, SP" />
+  <meta property="og:description" content="Eventos inesquecíveis no litoral paulista — preto & dourado, elegância e inovação." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1511578314322-379afb476865?q=80&w=1400&auto=format&fit=crop" />
+  <meta property="og:locale" content="pt_BR" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='16' fill='%230B0B0F'/><text x='50' y='58' font-family='Cormorant Garamond' font-size='56' text-anchor='middle' fill='%23D4AF37'>B</text></svg>">
+  <link rel="preload" as="video" href="https://cdn.coverr.co/videos/coverr-dinner-party-people-1270/1080p.mp4" type="video/mp4">
+  <style>
+    :root {
+      --bg: #0B0B0F;          
+      --panel: #121218;       
+      --ink: #F5F5F7;         
+      --muted: #bdbdc7;       
+      --gold: #D4AF37;        
+      --gold-2: #FFE8A3;      
+      --accent: var(--gold);
+      --radius: 18px; --r2: 28px; --shadow: 0 10px 40px rgba(0,0,0,.5);
+      --grid: min(1160px, 92vw);
+      accent-color: var(--gold);
+      color-scheme: dark;
+    }
+
+    @media (prefers-contrast: more) {
+      :root { --muted: #e6e6ee; }
+    }
+
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0; background: radial-gradient(1200px 800px at 10% -10%, #151520 0%, transparent 60%) ,var(--bg);
+      color: var(--ink);
+      font-family: 'Poppins', system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, 'Helvetica Neue', Arial;
+      line-height: 1.55; text-rendering: optimizeLegibility;
+    }
+    a { color: var(--gold); text-decoration: none; transition: color 0.2s ease; }
+    a:hover, a:focus { color: var(--gold-2); text-decoration: underline; outline: none; }
+    img { max-width: 100%; display: block; }
+    .container { width: var(--grid); margin: 0 auto; }
+
+    
+    header { position: sticky; top: 0; z-index: 50; backdrop-filter: saturate(140%) blur(8px); background: rgba(11,11,15,.6); border-bottom: 1px solid rgba(212,175,55,.25); }
+    .nav { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 10px 0; }
+    .brand { display:flex; align-items:center; gap:12px; font-weight:700; letter-spacing:.3px; }
+    .brand svg { width: 38px; height: 38px; }
+    .menu { display:flex; gap:20px; align-items:center; }
+    .menu a { font-weight:600; color: var(--ink); opacity:.9; transition: all 0.2s ease; }
+    .menu a:hover, .menu a:focus { color: var(--gold); opacity:1; outline: 1px dashed var(--gold); outline-offset: 4px; }
+    .cta { background: linear-gradient(135deg, var(--gold), #b78e1e); color: #0b0b0f; padding: 10px 16px; border-radius: 999px; box-shadow: var(--shadow); font-weight:800; border: none; transition: all 0.2s ease; }
+    .cta:is(button) { cursor:pointer; }
+    .cta:hover, .cta:focus { transform: translateY(-2px); box-shadow: 0 12px 30px rgba(212, 175, 55, 0.3); outline: none; }
+    .burger { display:none; border:1px solid rgba(212,175,55,.25); padding:8px 12px; border-radius: 12px; background: #16161d; color: var(--ink); transition: all 0.2s ease; }
+    .burger:hover, .burger:focus { background: var(--gold); color: #0b0b0f; outline: none; }
+
+    .hero { position: relative; overflow:hidden; min-height: 72vh; display:grid; place-items:center; isolation:isolate; }
+    .hero video { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; filter: saturate(.9) contrast(1.05) brightness(.6); z-index:-1; transition: opacity 0.5s ease; }
+    .hero .wrap { display:grid; grid-template-columns: 1.1fr 1fr; gap: 28px; align-items:center; padding: 70px 0; }
+    .badge { display:inline-flex; align-items:center; gap:10px; padding:6px 12px; border-radius:999px; background: rgba(212,175,55,.15); color: var(--gold); font-weight:700; font-size:.9rem; border:1px solid rgba(212,175,55,.25) }
+    .title { font-family: 'Cormorant Garamond', serif; font-weight:700; font-size: clamp(32px, 5vw, 58px); line-height:1.05; margin: 10px 0; letter-spacing:.3px; }
+    .subtitle { color: var(--muted); font-size: clamp(15px, 2vw, 18px); }
+    .hero-card { background: rgba(22,22,29,.7); border:1px solid rgba(212,175,55,.2); padding: 18px; border-radius: var(--r2); box-shadow: var(--shadow); display:grid; gap:12px; }
+    .hero-grid { display:grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+
+    section { padding: 70px 0; }
+    .sec-title { font-family:'Cormorant Garamond', serif; font-weight:700; font-size: clamp(24px, 3.2vw, 40px); margin: 0 0 18px; letter-spacing:.2px; }
+    .lead { color: var(--muted); }
+
+    .grid { display:grid; gap: 18px; }
+    .grid-3 { grid-template-columns: repeat(3, 1fr); }
+    .grid-2 { grid-template-columns: repeat(2, 1fr); }
+    .card { background: linear-gradient(180deg, rgba(22,22,29,.9), rgba(14,14,18,.9)); border:1px solid rgba(212,175,55,.18); border-radius: var(--radius); box-shadow: var(--shadow); overflow:clip; display:flex; flex-direction:column; container-type: inline-size; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover, .card:focus-within { transform: translateY(-5px); box-shadow: 0 15px 35px rgba(0,0,0,0.6); }
+    .card img { aspect-ratio: 16/10; object-fit: cover; transition: transform 0.5s ease; }
+    .card:hover img { transform: scale(1.03); }
+    .card .pad { padding: 16px; }
+    .card:has(img) .pad { padding-block: 18px 20px; }
+
+    @container (max-width: 360px) {
+      .card .pad { padding: 12px; }
+    }
+
+    .feature { display:flex; gap:12px; align-items:flex-start; }
+    .feature svg { min-width: 22px; }
+
+    .tabs { display:flex; gap: 10px; flex-wrap: wrap; }
+    .tab-btn { padding: 10px 14px; border:1px solid rgba(212,175,55,.25); border-radius: 12px; background:#14141b; color:var(--ink); cursor:pointer; font-weight:700; transition: all 0.2s ease; }
+    .tab-btn:hover, .tab-btn:focus { background: rgba(212,175,55,.2); outline: none; }
+    .tab-btn[aria-selected="true"] { background: var(--gold); color:#0b0b0f; border-color: var(--gold); }
+    .tab-panel { display:none; }
+    .tab-panel[aria-hidden="false"] { display:block; }
+
+    .gallery { columns: 2 280px; column-gap: 12px; }
+    .gallery a { display:block; break-inside: avoid; margin-bottom: 12px; border-radius:16px; overflow:hidden; border:1px solid rgba(212,175,55,.18); transition: transform 0.3s ease; }
+    .gallery a:hover, .gallery a:focus { transform: scale(1.02); outline: 2px solid var(--gold); outline-offset: 2px; }
+    .lightbox { position: fixed; inset:0; background: rgba(0,0,0,.96); display:none; align-items:center; justify-content:center; padding: 24px; z-index: 100; }
+    .lightbox img { max-height: 90vh; border-radius: 14px; box-shadow: var(--shadow); }
+
+    table { width:100%; border-collapse: collapse; border:1px solid rgba(212,175,55,.25); border-radius:14px; overflow:hidden; }
+    thead th { background: linear-gradient(180deg, rgba(212,175,55,.18), rgba(212,175,55,.06)); color:var(--gold-2); padding:12px; text-align:left; }
+    tbody td { padding:12px; border-top:1px solid rgba(212,175,55,.12); }
+    tfoot td { padding:12px; color: var(--muted); }
+
+    details { border:1px solid rgba(212,175,55,.25); border-radius: 12px; padding: 12px 14px; background:#101018; transition: all 0.3s ease; }
+    details:hover, details:focus-within { border-color: var(--gold); }
+    details + details { margin-top: 10px; }
+    summary { cursor: pointer; font-weight:700; color: var(--gold); padding: 5px; outline: none; }
+    summary:hover, summary:focus { color: var(--gold-2); }
+    details[open] { background: #12121a; }
+
+    input, textarea, select {
+      width: 100%; 
+      padding: 12px; 
+      border-radius: 10px; 
+      border: 1px solid rgba(212,175,55,.25); 
+      background: #0D0D13; 
+      color: var(--ink);
+      font-family: inherit;
+      transition: all 0.2s ease;
+    }
+    input:focus, textarea:focus, select:focus {
+      outline: 2px solid var(--gold);
+      border-color: var(--gold);
+      box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.2);
+    }
+    label { display: block; margin-bottom: 8px; font-weight: 500; }
+
+    footer { background:#07070b; color:#e5e7eb; border-top:1px solid rgba(212,175,55,.25); padding: 40px 0 20px; }
+    footer a { color:var(--gold-2); transition: color 0.2s ease; }
+    footer a:hover, footer a:focus { color: var(--gold); text-decoration: underline; outline: none; }
+
+    .back-to-top {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: var(--gold);
+      color: #0b0b0f;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(20px);
+      transition: all 0.3s ease;
+      z-index: 99;
+      box-shadow: var(--shadow);
+      border: none;
+    }
+    .back-to-top.visible {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+    .back-to-top:hover, .back-to-top:focus {
+      background: var(--gold-2);
+      transform: translateY(-5px);
+      outline: none;
+    }
+
+    .video-loading {
+      position: absolute;
+      inset: 0;
+      background: var(--bg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: -1;
+    }
+    .video-loading::after {
+      content: "";
+      width: 40px;
+      height: 40px;
+      border: 4px solid rgba(212,175,55,.2);
+      border-top: 4px solid var(--gold);
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    .form-status {
+      padding: 12px;
+      border-radius: 10px;
+      margin-top: 15px;
+      display: none;
+    }
+    .form-status.success {
+      background: rgba(46, 204, 113, 0.15);
+      border: 1px solid rgba(46, 204, 113, 0.3);
+      color: #2ecc71;
+      display: block;
+    }
+    .form-status.error {
+      background: rgba(231, 76, 60, 0.15);
+      border: 1px solid rgba(231, 76, 60, 0.3);
+      color: #e74c3c;
+      display: block;
+    }
+
+    @media (max-width: 980px) {
+      .hero .wrap { grid-template-columns: 1fr; }
+      .grid-3 { grid-template-columns: 1fr; }
+      .grid-2 { grid-template-columns: 1fr; }
+      .menu { 
+        display: none; 
+        position: fixed; 
+        top: 70px; 
+        left: 0; 
+        right: 0;
+        background: #101018; 
+        padding: 20px; 
+        border-top: 1px solid rgba(212,175,55,.25);
+        box-shadow: var(--shadow); 
+        flex-direction: column;
+        z-index: 100;
+        max-height: calc(100vh - 70px);
+        overflow-y: auto;
+      }
+      .menu.active {
+        display: flex;
+      }
+      .menu a {
+        padding: 12px 0;
+        border-bottom: 1px solid rgba(212,175,55,.1);
+        width: 100%;
+      }
+      .menu a:last-child {
+        border-bottom: none;
+      }
+      .burger { display: inline-flex; }
+      
+      .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+      }
+      
+      .gallery {
+        columns: 1;
+      }
+      
+      iframe {
+        height: 300px;
+      }
+    }
+
+    @media (prefers-reduced-motion: no-preference) {
+      .revealable { opacity: 0; transform: translateY(14px); transition: opacity .6s ease, transform .6s ease; }
+      .revealable.reveal { opacity: 1; transform: none; }
+    }
+
+    button:focus-visible,
+    a:focus-visible,
+    input:focus-visible,
+    textarea:focus-visible,
+    select:focus-visible {
+      outline: 2px solid var(--gold);
+      outline-offset: 2px;
+    }
+
+    @media (prefers-contrast: high) {
+      :root {
+        --ink: #FFFFFF;
+        --muted: #E0E0E0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a href="#main-content" class="skip-link" style="position:absolute; top:-40px; left:6px; background:var(--gold); color:#0b0b0f; padding:8px; z-index:100; transition:top 0.3s ease;">Pular para o conteúdo principal</a>
+  
+  <header aria-label="Topo do site">
+    <div class="container nav">
+      <a class="brand" href="#home" aria-label="Ir para início">
+        <svg viewBox="0 0 100 100" role="img" aria-hidden="true"><rect width="100" height="100" rx="16" fill="#0B0B0F"/><text x="50" y="62" text-anchor="middle" font-size="54" font-family="Cormorant Garamond, serif" fill="#D4AF37">B</text></svg>
+        <span>Barcelona Buffet</span>
+      </a>
+      <nav class="menu" aria-label="Navegação principal">
+        <a href="#sobre">Sobre</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#eventos">Eventos</a>
+        <a href="#cardapio">Cardápio</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#faq">FAQ</a>
+        <button id="abrir-visita" class="cta">Agendar visita</button>
+        <a href="#contato" class="cta" style="background:linear-gradient(135deg,#FFD166,#D4AF37)">Orçamento</a>
+      </nav>
+      <button class="burger" aria-label="Abrir menu" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <main id="main-content" tabindex="-1">
+    <section id="home" class="hero">
+      <div class="video-loading" aria-hidden="true"></div>
+      <video autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1511578314322-379afb476865?q=80&w=1200&auto=format&fit=crop" onloadeddata="this.parentNode.querySelector('.video-loading').style.display = 'none'">
+        <source src="https://cdn.coverr.co/videos/coverr-dinner-party-people-1270/1080p.mp4" type="video/mp4">
+      </video>
+      <div class="container wrap">
+        <div class="revealable">
+          <span class="badge" aria-label="Destaque">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12l2-2 4 4 8-8 4 4"/></svg>
+            Eventos completos no litoral
+          </span>
+          <h1 class="title">Barcelona Buffet social e Danceteria</h1>
+          <p class="subtitle">Preto & dourado, gastronomia autoral e tecnologia para uma celebração impecável. Do briefing ao brinde final, nós cuidamos de tudo.</p>
+          <div class="hero-card" role="region" aria-label="Diferenciais">
+            <div class="feature"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"/></svg><div><strong>Gastronomia autoral</strong><br><span class="lead">Buffet quente e finger foods assinados por chef.</span></div></div>
+            <div class="feature"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 0 20"/></svg><div><strong>Localização privilegiada</strong><br><span class="lead">Fácil acesso para toda a Baixada Santista.</span></div></div>
+            <div class="feature"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg><div><strong>Agenda flexível</strong><br><span class="lead">Pacotes customizados para cada ocasião.</span></div></div>
+          </div>
+        </div>
+        <div class="hero-grid revealable" aria-hidden="true">
+          <picture>
+            <source srcset="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlV5SJLOiuqILzrHhn90raNKHcrBGJiIgFSw&s" media="(min-width: 900px)">
+            <img alt="Salão decorado" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlV5SJLOiuqILzrHhn90raNKHcrBGJiIgFSw&s" loading="lazy">
+          </picture>
+          <img alt="Mesa de doces sofisticada" src="https://i.pinimg.com/originals/6e/cf/4e/6ecf4e9bb3b21b48150fc8ac6071aefb.jpg" loading="lazy">
+          <img alt="Entrada do buffet com iluminação" src="https://casaefesta.com/wp-content/uploads/2017/08/entrada-festa-de-15-anos-13-1110x555.jpg" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre">
+      <div class="container">
+        <h2 class="sec-title">Sobre o Barcelona Buffet</h2>
+        <p class="lead">Espaço completo em São Vicente (SP) para casamentos, aniversários, festas de 15 anos, formaturas e eventos corporativos. Estrutura moderna, cozinha própria e equipe apaixonada por receber.</p>
+        <div class="grid grid-3" style="margin-top:18px;">
+          <div class="card revealable">
+            <img alt="Cozinha do buffet" src="https://images.squarespace-cdn.com/content/v1/575591a055598617f5343e86/1466625726760-JZ0R6C6BFOT261E08M76/buffet-celano-infraestrutura-cozinha-industrial-1.jpg?format=2500w" loading="lazy">
+            <div class="pad"><strong>Cozinha interna</strong><br><span class="lead">Produção no local para frescor e qualidade.</span></div>
+          </div>
+          <div class="card revealable">
+            <img alt="Decoração elegante" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj5XA6zrSoUQF0NhwXp_asTMCgV7Fz1KkzBw&s" loading="lazy">
+            <div class="pad"><strong>Decoração & ambientação</strong><br><span class="lead">Do clássico ao contemporâneo conforme seu estilo.</span></div>
+          </div>
+          <div class="card revealable">
+            <img alt="Equipe de serviço" src="https://ldmbuffeteeventos.com/wp-content/uploads/2020/11/ldm-buffet-e-eventos-equipe.jpg" loading="lazy">
+            <div class="pad"><strong>Equipe completa</strong><br><span class="lead">Coordenação, garçons, bartender e cerimonial.</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="servicos" aria-label="Serviços e pacotes">
+      <div class="container">
+        <h2 class="sec-title">Serviços</h2>
+        <div class="grid grid-3">
+          <div class="card revealable">
+            <img alt="Buffet e gastronomia" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8kEZ8PHTa4fVuAM4lYVJW38IzM9LHRcrtnw&s" loading="lazy">
+            <div class="pad">
+              <h3>Gastronomia</h3>
+              <p class="lead">Finger foods, ilhas gastronômicas, estação de massas, pratos quentes, mesa de doces e bolo cenográfico.</p>
+            </div>
+          </div>
+          <div class="card revealable">
+            <img alt="Iluminação de pista" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRf7UqeK5P0VzDvobXZJK_5Uo-pptSf3YofEQ&s" loading="lazy">
+            <div class="pad">
+              <h3>Estrutura & Ambientação</h3>
+              <p class="lead">Som, iluminação, pista de dança, mobiliário, lounges instagramáveis e painel de LED opcional.</p>
+            </div>
+          </div>
+          <div class="card revealable">
+            <img alt="Barman preparando drinks" src="https://www.agaridrinks.com.br/imagens/imagens-reg/buffets-de-coqueteis-em-pirituba.jpg" loading="lazy">
+            <div class="pad">
+              <h3>Bebidas & Bar</h3>
+              <p class="lead">Open bar (com e sem álcool), coquetéis autorais, estação de gin, caipiroskas e bar de cafés.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="eventos" aria-label="Tipos de eventos">
+      <div class="container">
+        <h2 class="sec-title">Eventos</h2>
+        <p class="lead">Escolha uma categoria para ver detalhes, cronograma e itens inclusos.</p>
+        <div class="tabs" role="tablist" aria-label="Abas de eventos">
+          <button class="tab-btn" role="tab" aria-selected="true" data-target="tab-15" id="tab-15-btn">Aniversário de 15 anos</button>
+          <button class="tab-btn" role="tab" aria-selected="false" data-target="tab-casamento" id="tab-casamento-btn">Casamentos</button>
+          <button class="tab-btn" role="tab" aria-selected="false" data-target="tab-corp" id="tab-corp-btn">Corporativos</button>
+        </div>
+
+        <div id="tab-15" class="tab-panel" aria-hidden="false" role="tabpanel" aria-labelledby="tab-15-btn" style="margin-top:18px;">
+          <div class="grid grid-2">
+            <div class="card"><img alt="Decoração para 15 anos" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuSt1_47Z-iYv2soFhdglOmTlTD_OpAxOz0A&s" loading="lazy"><div class="pad"><h3>Experiência Debut</h3><ul><li>Recepção com welcome drink e painel para fotos</li><li>Coreografia, valsa e abertura de pista com DJ</li><li>Temas personalizáveis: clássico, moderno, neon, garden</li><li>Iluminação cênica, pista de LED (opcional) e sparkles frios</li></ul></div></div>
+            <div class="card"><img alt="Mesa de doces" src="https://www.espacomegaeventos.com.br/salao-de-festas/imagens/buffet-para-festa-debutante-valores.jpg" loading="lazy"><div class="pad"><h3>Pacote Essencial 15</h3><p>Inclui salão, gastronomia completa, DJ, decoração base e cerimonial.</p><p><span class="badge">Cronograma sugerido (5h)</span></p><ol><li>19:00 — Recepção & fotos</li><li>20:00 — Jantar</li><li>21:00 — Cerimonial & homenagens</li><li>21:30 — Valsa & abertura de pista</li><li>22:00 — Bolo & doces</li></ol></div></div>
+          </div>
+        </div>
+
+        <div id="tab-casamento" class="tab-panel" aria-hidden="true" role="tabpanel" aria-labelledby="tab-casamento-btn" style="margin-top:18px;">
+          <div class="grid grid-2">
+            <div class="card"><img alt="Cerimônia" src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?q=80&w=1200&auto=format&fit=crop" loading="lazy"><div class="pad"><h3>Mini Wedding & Clássico</h3><p class="lead">Cerimônia no local, jantar e festa com pista até 6h.</p></div></div>
+            <div class="card"><img alt="Mesa posta" src="https://images.unsplash.com/photo-1478147427282-58a87a120781?q=80&w=1200&auto=format&fit=crop" loading="lazy"><div class="pad"><h3>Experiência Gastronômica</h3><p class="lead">Menu assinaturas, harmonização de bebidas e ilha gourmet.</p></div></div>
+          </div>
+        </div>
+
+        <div id="tab-corp" class="tab-panel" aria-hidden="true" role="tabpanel" aria-labelledby="tab-corp-btn" style="margin-top:18px;">
+          <div class="grid grid-2">
+            <div class="card"><img alt="Palestra corporativa" src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1200&auto=format&fit=crop" loading="lazy"><div class="pad"><h3>Convenções & Treinamentos</h3><p class="lead">Palco, áudio profissional, coffee break e buffet completo.</p></div></div>
+            <div class="card"><img alt="Coquetel corporativo" src="https://images.unsplash.com/photo-1520975922324-48e0b0b1372b?q=80&w=1200&auto=format&fit=crop" loading="lazy"><div class="pad"><h3>Coquetéis & Premiações</h3><p class="lead">Bar, canapés, telão e cenografia de marca.</p></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="cardapio" aria-label="Cardápio do buffet">
+      <div class="container">
+        <h2 class="sec-title">Cardápio</h2>
+        <div class="grid grid-3">
+          <div class="card"><div class="pad"><h3>Entradas</h3><ul><li>Bruschetta caprese</li><li>Mini tartar de salmão</li><li>Cestinha de brie com geleia</li></ul></div></div>
+          <div class="card"><div class="pad"><h3>Pratos Quentes</h3><ul><li>Risoto de limão siciliano</li><li>Escalope ao molho madeira</li><li>Rondelli de quatro queijos</li></ul></div></div>
+          <div class="card"><div class="pad"><h3>Doces & Bolo</h3><ul><li>Camafeu de nozes</li><li>Brigadeiro belga</li><li>Cheesecake frutos vermelhos</li></ul></div></div>
+        </div>
+        <p class="lead" style="margin-top:12px;">Menu adaptável para opções veganas, vegetarianas, sem glúten e sem lactose.</p>
+
+        <table aria-label="Tabela de pacotes e valores" style="margin-top:18px">
+          <thead><tr><th>Pacote</th><th>Capacidade</th><th>Inclui</th><th>Investimento</th></tr></thead>
+          <tbody>
+            <tr><td>Essencial</td><td>até 120</td><td>Espaço + gastronomia + DJ</td><td>R$ sob consulta</td></tr>
+            <tr><td>Premium</td><td>até 200</td><td>+ Decoração avançada + Bar</td><td>R$ sob consulta</td></tr>
+            <tr><td>Black Gold</td><td>até 280</td><td>+ LED, sparkles e cenografia</td><td>R$ sob consulta</td></tr>
+          </tbody>
+          <tfoot><tr><td colspan="4">Valores variam conforme data, cardápio e serviços extras.</td></tr></tfoot>
+        </table>
+      </div>
+    </section>
+
+    <section id="galeria">
+      <div class="container">
+        <h2 class="sec-title">Galeria</h2>
+        <div class="gallery" aria-live="polite">
+          <a href="https://images.unsplash.com/photo-1511578314322-379afb476865?q=80&w=1600&auto=format&fit=crop"><img alt="Decoração floral" src="https://images.unsplash.com/photo-1511578314322-379afb476865?q=80&w=800&auto=format&fit=crop" loading="lazy"></a>
+          <a href="https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?q=80&w=1600&auto=format&fit=crop"><img alt="Bolo e doces" src="https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?q=80&w=800&auto=format&fit=crop" loading="lazy"></a>
+          <a href="https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=1600&auto=format&fit=crop"><img alt="Lounge" src="https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=800&auto=format&fit=crop" loading="lazy"></a>
+          <a href="https://images.unsplash.com/photo-1541976076758-347942db197b?q=80&w=1600&auto=format&fit=crop"><img alt="Pista de dança" src="https://images.unsplash.com/photo-1541976076758-347942db197b?q=80&w=800&auto=format&fit=crop" loading="lazy"></a>
+        </div>
+        <div id="lightbox" class="lightbox" role="dialog" aria-label="Imagem ampliada" aria-modal="true"><img alt="Imagem ampliada"></div>
+      </div>
+    </section>
+
+    <section id="faq" aria-label="Perguntas frequentes">
+      <div class="container">
+        <h2 class="sec-title">FAQ</h2>
+        <details><summary>Vocês têm estacionamento?</summary><p class="lead">Sim, vagas próprias e convênio com estacionamento próximo.</p></details>
+        <details><summary>É possível levar fornecedores externos?</summary><p class="lead">Sim, mediante homologação e seguro. Também indicamos parceiros.</p></details>
+        <details><summary>Atendem restrições alimentares?</summary><p class="lead">Claro. Adaptamos o menu para veganos, vegetarianos, sem glúten e sem lactose.</p></details>
+      </div>
+    </section>
+
+    <section id="contato" aria-label="Orçamentos e contato">
+      <div class="container">
+        <h2 class="sec-title">Peça seu orçamento</h2>
+        <p class="lead">Preencha os dados e abriremos uma conversa no WhatsApp com seu pré-briefing.</p>
+        <form id="orcamento-form" class="grid grid-3" aria-describedby="aviso-priv">
+          <div class="card"><div class="pad">
+            <label for="nome">Seu nome</label>
+            <input required name="nome" id="nome" type="text" placeholder="Seu nome">
+            <br><br>
+            <label for="tel">WhatsApp (apenas números, c/ DDD)</label>
+            <input name="tel" id="tel" type="tel" placeholder="13999999999" pattern="\d{10,13}">
+          </div></div>
+          <div class="card"><div class="pad">
+            <label for="tipo">Tipo de evento</label>
+            <select name="tipo" id="tipo" required>
+              <option value="">Selecione...</option>
+              <option>Aniversário de 15 anos</option>
+              <option>Casamento</option>
+              <option>Corporativo</option>
+              <option>Infantil</option>
+              <option>Outro</option>
+            </select>
+            <br><br>
+            <label for="data">Data desejada</label>
+            <input name="data" id="data" type="date" required>
+          </div></div>
+          <div class="card"><div class="pad">
+            <label for="convidados">Número de convidados</label>
+            <input name="convidados" id="convidados" type="number" min="20" step="5" placeholder="100">
+            <br><br>
+            <label for="msg">Observações</label>
+            <textarea name="msg" id="msg" rows="4" placeholder="Temas, restrições alimentares, ideias de decoração..."></textarea>
+            <br><br>
+            <button class="cta" type="submit">Abrir no WhatsApp</button>
+            <div id="form-status" class="form-status" role="alert" aria-live="polite"></div>
+          </div></div>
+        </form>
+        <p id="aviso-priv" class="lead" style="margin-top:10px;">Usamos seus dados apenas para contato de orçamento.</p>
+      </div>
+    </section>
+
+    <section id="localizacao" aria-label="Localização e mapa">
+      <div class="container">
+        <h2 class="sec-title">Onde estamos</h2>
+        <div class="grid grid-2">
+          <div class="card"><div class="pad">
+            <p><strong>Endereço:</strong> São Vicente, SP — Brasil</p>
+            <p><strong>Telefone:</strong> (13) 0000-0000</p>
+            <p><strong>Atendimento:</strong>Ter–sáb, 10h às 20h</p>
+            <p class="lead">Agende uma visita para conhecer o espaço e provar nosso menu degustação.</p>
+            <button id="abrir-visita-2" class="cta">Agendar visita</button>
+          </div></div>
+          <div class="card" style="overflow:hidden">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3646.060672724994!2d-46.37837252582649!3d-23.958294576292587!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce1df511e26fb1%3A0x2ce28d91da579987!2sBarcelona%20Buffet%20Social%20e%20Danceteria!5e0!3m2!1spt-BR!2sus!4v1756318854834!5m2!1spt-BR!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Localização do Barcelona Buffet em São Vicente, SP"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <button class="back-to-top" aria-label="Voltar ao topo">↑</button>
+
+  <footer>
+    <div class="container" style="padding: 28px 0; display:flex; flex-wrap:wrap; gap:18px; align-items:center; justify-content:space-between;">
+      <div style="display:flex; gap:12px; align-items:center;">
+        <svg width="28" height="28" viewBox="0 0 100 100" aria-hidden="true"><rect width="100" height="100" rx="16" fill="#0B0B0F"/><text x="50" y="62" text-anchor="middle" font-size="54" font-family="Cormorant Garamond, serif" fill="#D4AF37">B</text></svg>
+        <div>
+          <strong>Barcelona Buffet</strong>
+          <div class="lead">São Vicente • SP</div>
+        </div>
+      </div>
+      <div class="lead">© <span id="year"></span> Barcelona Buffet. Todos os direitos reservados.</div>
+      <div class="lead"><a href="#contato">Solicitar orçamento</a></div>
+    </div>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  </footer>
+
+  <!-- Dialog: agendar visita -->
+  <dialog id="dlg-visita" style="border:none; border-radius:20px; padding:0; background:#0f0f15; color:#fff; width:min(560px,92vw); max-width: 100%;">
+    <form method="dialog" style="padding:18px 18px 0 18px; border-bottom:1px solid rgba(212,175,55,.25)">
+      <h3 style="margin:0 0 6px 0; font-family:'Cormorant Garamond',serif; font-size:26px">Agendar visita</h3>
+      <p class="lead" style="margin:0 0 12px 0">Escolha uma data e horário para conhecer nosso espaço.</p>
+    </form>
+    <form id="form-visita" style="padding: 18px">
+      <div style="display:grid; gap:12px; grid-template-columns:1fr 1fr">
+        <label for="visita-data">Data
+          <input type="date" id="visita-data" required>
+        </label>
+        <label for="visita-horario">Horário
+          <input type="time" id="visita-horario" required>
+        </label>
+      </div>
+      <div style="display:flex; gap:10px; justify-content:flex-end; margin-top:16px">
+        <button id="fechar-visita" type="button" class="cta" style="background:#1b1b23; color:#fff; border:1px solid rgba(212,175,55,.25)">Cancelar</button>
+        <button class="cta" type="submit">Confirmar</button>
+      </div>
+    </form>
+  </dialog>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const $ = (s, r=document) => r.querySelector(s);
+      const $$ = (s, r=document) => Array.from(r.querySelectorAll(s));
+
+      const skipLink = $('.skip-link');
+      skipLink.addEventListener('focus', () => {
+        skipLink.style.top = '6px';
+      });
+      skipLink.addEventListener('blur', () => {
+        skipLink.style.top = '-40px';
+      });
+
+      const burger = $('.burger');
+      const menu = $('.menu');
+      burger?.addEventListener('click', ()=>{
+        const isExpanded = burger.getAttribute('aria-expanded') === 'true';
+        burger.setAttribute('aria-expanded', !isExpanded);
+        menu.classList.toggle('active');
+        
+        if (menu.classList.contains('active')) {
+          setTimeout(() => menu.querySelector('a').focus(), 100);
+        }
+      });
+
+      document.addEventListener('click', (e) => {
+        if (menu.classList.contains('active') && !menu.contains(e.target) && e.target !== burger) {
+          menu.classList.remove('active');
+          burger.setAttribute('aria-expanded', 'false');
+        }
+      });
+
+      const tabButtons = $$('.tab-btn');
+      const tabPanels = $$('.tab-panel');
+      tabButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const target = btn.getAttribute('data-target');
+          tabButtons.forEach(b=>b.setAttribute('aria-selected','false'));
+          btn.setAttribute('aria-selected','true');
+          tabPanels.forEach(p=>p.setAttribute('aria-hidden','true'));
+          $(`#${target}`).setAttribute('aria-hidden','false');
+          if (window.innerWidth < 880) {
+            $(`#${target}`).scrollIntoView({behavior:'smooth'});
+          }
+        });
+        
+        btn.addEventListener('keydown', (e) => {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            btn.click();
+          } else if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+            e.preventDefault();
+            const currentIndex = tabButtons.indexOf(btn);
+            let nextIndex;
+            
+            if (e.key === 'ArrowRight') {
+              nextIndex = (currentIndex + 1) % tabButtons.length;
+            } else {
+              nextIndex = (currentIndex - 1 + tabButtons.length) % tabButtons.length;
+            }
+            
+            tabButtons[nextIndex].focus();
+            tabButtons[nextIndex].click();
+          }
+        });
+      });
+
+      const lightbox = $('#lightbox');
+      $$('.gallery a').forEach(a => {
+        a.addEventListener('click', (e) => {
+          e.preventDefault();
+          lightbox.querySelector('img').src = a.href;
+          lightbox.style.display = 'flex';
+          lightbox.setAttribute('tabindex', '0');
+          lightbox.focus();
+        });
+      });
+      
+      lightbox.addEventListener('click', (e) => {
+        if (e.target === lightbox) {
+          lightbox.style.display='none';
+        }
+      });
+      
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && lightbox.style.display === 'flex') {
+          lightbox.style.display = 'none';
+        }
+      });
+
+      const form = $('#orcamento-form');
+      const formStatus = $('#form-status');
+      form?.addEventListener('submit', (e)=>{
+        e.preventDefault();
+        const data = Object.fromEntries(new FormData(form));
+        
+        if (!data.nome || !data.tipo || !data.data) {
+          formStatus.textContent = 'Por favor, preencha todos os campos obrigatórios.';
+          formStatus.className = 'form-status error';
+          return;
+        }
+        
+        const msg = `Olá, sou ${data.nome}. Quero um orçamento para ${data.tipo} em ${data.data} para ${data.convidados || 'a definir'} convidados. Observações: ${data.msg || 'Nenhuma'}`;
+        const tel = '55' + (data.tel || '1300000000');
+        const wa = `https://wa.me/${tel}?text=${encodeURIComponent(msg)}`;
+        
+        try {
+          if (navigator.share) {
+            navigator.share({ 
+              title: 'Orçamento • Barcelona Buffet', 
+              text: msg, 
+              url: wa 
+            }).then(() => {
+              formStatus.textContent = 'Mensagem compartilhada com sucesso!';
+              formStatus.className = 'form-status success';
+              form.reset();
+            }).catch((err) => {
+              console.error('Erro ao compartilhar:', err);
+              window.open(wa, '_blank');
+            });
+          } else {
+            window.open(wa, '_blank');
+            formStatus.textContent = 'Redirecionando para o WhatsApp...';
+            formStatus.className = 'form-status success';
+            setTimeout(() => form.reset(), 1000);
+          }
+        } catch (error) {
+          console.error('Erro:', error);
+          window.open(wa, '_blank');
+        }
+      });
+
+      const dlg = $('#dlg-visita');
+      const visitaForm = $('#form-visita');
+      $$('#abrir-visita, #abrir-visita-2').forEach(btn => btn.addEventListener('click', () => dlg.showModal()));
+      $('#fechar-visita').addEventListener('click', () => dlg.close());
+      
+      dlg.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+          dlg.close();
+        }
+      });
+      
+      visitaForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const data = $('#visita-data').value;
+        const hora = $('#visita-horario').value;
+        
+        console.log('Visita agendada para:', data, hora);
+        
+        alert(`Visita agendada para ${data} às ${hora}. Entraremos em contato para confirmar!`);
+        dlg.close();
+        visitaForm.reset();
+      });
+
+      const io = new IntersectionObserver((entries)=>{
+        entries.forEach(el=>{
+          if (el.isIntersecting) el.target.classList.add('reveal');
+        });
+      }, { threshold: .12 });
+      $$('.revealable').forEach(el=>io.observe(el));
+
+      const backToTopBtn = $('.back-to-top');
+      window.addEventListener('scroll', () => {
+        if (window.pageYOffset > 300) {
+          backToTopBtn.classList.add('visible');
+        } else {
+          backToTopBtn.classList.remove('visible');
+        }
+      });
+      
+      backToTopBtn.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        setTimeout(() => $('header').setAttribute('tabindex', '-1').focus(), 500);
+      });
+      
+      dlg.addEventListener('close', () => {
+        const lastFocused = document.activeElement;
+        if (lastFocused && lastFocused.id.startsWith('abrir-visita')) {
+          lastFocused.focus();
+        }
+      });
+    });
+  </script>
+</body>
+</html>
